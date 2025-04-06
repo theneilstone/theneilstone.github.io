@@ -16,7 +16,7 @@ jobs:
       - name: Build the site
         run: ./build.sh
       - name: Publish to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@4.1.4
+        uses: JamesIves/github-pages-deploy-action@4.7.3
         with:
           token: ${{ secrets.ACTIONS_TOKEN }}
           branch: gh-pages

@@ -19,9 +19,9 @@
 
 (setq org-publish-project-alist
       '(("blog-post"
-	 :base-directory "post/"
+	 :base-directory "./content/"
 	 :base-extension "org"
-	 :publishing-directory "publish_html/"
+	 :publishing-directory "./publish/"
 	 :recursive t
 	 :publishing-function org-html-publish-to-html
 	 :org-html-preamble nil
@@ -37,9 +37,9 @@
 	 :sitemap-file-entry-format "%d %t"
 	 )
 	("blog-static"
-	 :base-directory "post/"
+	 :base-directory "./content/"
 	 :base-extension "css\\|js\\|png\\|jpg\\|gif\\|pdf\\|mp3\\|ogg\\|swf"
-	 :publishing-directory "public_html/"
+	 :publishing-directory "./public/"
 	 :recursive t
 	 :publishing-function org-publish-attachment
 	 )

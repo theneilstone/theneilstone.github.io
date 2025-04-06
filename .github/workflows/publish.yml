@@ -3,7 +3,7 @@ name: Publish to GitHub Pages
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   publish:
@@ -20,4 +20,4 @@ jobs:
         with:
           token: ${{ secrets.ACTIONS_TOKEN }}
           branch: gh-pages
-          folder: public_html
+          folder: publish
